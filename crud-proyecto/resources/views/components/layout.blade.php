@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dapriska</title>
-  <link rel="shortcut icon" type="image/png" href="/material/images/logos/favicon.png" />
+  <title>{{ $titulo ?? 'Sin título' }}</title>
+  <link rel="shortcut icon" type="image/png" href="/material/images/logos/dapriskalogo (2).png" />
   <link rel="stylesheet" href="/material/css/styles.min.css" />
 </head>
 
@@ -18,8 +18,8 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index.html" class="text-nowrap logo-img">
-            <img src="/material/images/logos/dapriskalogomain.png" width="180" alt="" />
+          <a href="{{ url('/') }}" class="text-nowrap logo-img">
+            <img src="/material/images/logos/dapriskalogo (2).png" width="180" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -33,7 +33,7 @@
               <span class="hide-menu">Home</span>
             </li>
             <li class="sidebar-item">
-            <a class="sidebar-link" href="{{ route('cita.index') }}" aria-expanded="false">Citas</a>
+              <a class="sidebar-link" href="{{ route('cita.index') }}" aria-expanded="false">Citas</a>
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
@@ -44,7 +44,7 @@
                 <span>
                   <i class="ti ti-calendar-plus"></i>
                 </span>
-                <span class="hide-menu">Crear Cita</span>
+                <span class="hide-menu">Agendar Cita</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -99,38 +99,9 @@
                 <span class="hide-menu">Registrarse</span>
               </a>
             </li>
-            <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">EXTRA</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-mood-happy"></i>
-                </span>
-                <span class="hide-menu">Icons</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-aperture"></i>
-                </span>
-                <span class="hide-menu">Sample Page</span>
-              </a>
-            </li>
+
           </ul>
-          <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
-            <div class="d-flex">
-              <div class="unlimited-access-title me-3">
-                <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Upgrade to pro</h6>
-                <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/" target="_blank" class="btn btn-primary fs-2 fw-semibold lh-sm">Buy Pro</a>
-              </div>
-              <div class="unlimited-access-img">
-                <img src="/material/images/backgrounds/rocket.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
+          
         </nav>
         <!-- End Sidebar navigation -->
       </div>
